@@ -1,0 +1,33 @@
+{
+  "name": "rds-component",
+  "version": "0.0.1",
+  "description": "This component allows to save the payload of a message into rds.",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "docker:build": "docker build -t $DOCKER_DOMAIN/rds-component:$VERSION .",
+    "lint": "eslint .",
+    "start": "node ./node_modules/@openintegrationhub/ferryman/runGlobal.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openintegrationhub/rds-component"
+  },
+  "author": "Basaas GmbH",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@openintegrationhub/ferryman": "2.1.0",
+    "uuid": "8.3.2",
+    "bunyan": "2.0.5",
+    "bunyan-format": "0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "8.8.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.5.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Raw Record Storage (RDS) Component",
+  "description": "This component allows to save the payload of a message into rds.",
+  "buildType": "docker",
+  "docsUrl": "https://github.com/openintegrationhub/rds-component/README.md",
+  "actions": {
+      "store-raw-record": {
+          "main": "./actions/store-raw-record.js",
+          "title": "Stores a raw record"
+      }
+  }
+}
